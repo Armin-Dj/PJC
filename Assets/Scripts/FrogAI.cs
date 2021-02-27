@@ -34,13 +34,20 @@ public class FrogAI : MonoBehaviour
                 anim.SetBool("Jumping", false);
             }
         }
+        if (anim.GetBool("Jumping") == false && anim.GetBool("Falling") == false)
+        {
+            if (rb.velocity.y < .1)
+            {
+                anim.SetBool("Falling", true);
+                anim.SetBool("Jumping", false);
+            }
+        }
 
         //fall to idle
         if (coll.IsTouchingLayers(ground) && anim.GetBool("Falling"))
         {
             anim.SetBool("Falling", false);
         }
-
     }
 
     private void Move()
