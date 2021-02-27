@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\FrogAI.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:/An3/Programarea jocurilor pe calculator/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

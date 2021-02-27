@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private int cherries = 0;
     [SerializeField] private Text cherryText;
-    [SerializeField] private float hurtForce = 10f;
+    [SerializeField] private float hurtForce = 5f;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
