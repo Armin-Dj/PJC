@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,27 +10,35 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private Collider2D coll;
 
-    public int cherries = 0;
     //State machine
-    private enum State {idle, running, jumping, falling}
+    private enum State {idle, running, jumping, falling, hurt}
     private State state = State.idle;
 
     //Inspector variables
     [SerializeField] private LayerMask ground;
-    [SerializeField] private float speed = 7f;
-    [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private int cherries = 0;
+    [SerializeField] private Text cherryText;
+    [SerializeField] private float hurtForce = 10f;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+
+        speed = 7f;
+        jumpForce = 12f;
+        cherryText.text = "0";
     }
 
     // Update is called once per frame
     private void Update()
     {
-        MovementManager();
-
+        if(state != State.hurt)
+        {
+            MovementManager();
+        }
         AnimationState();
         anim.SetInteger("state", (int)state); //sets animation based on enum state
     }
@@ -40,9 +49,35 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             cherries++;
+            cherryText.text = cherries.ToString();
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy" )
+        {
+            if(state == State.falling)
+            { 
+                Destroy(collision.gameObject);
+                Jump();
+            }
+            else
+            {
+                state = State.hurt;
+                if(collision.gameObject.transform.position.x > transform.position.x)
+                {
+                    //enemy e in dreapta, damage + arunca stanga
+                    rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
+                }
+                else
+                {
+                    //enemy e in stanga, damage + arunga dreapta
+                    rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+                }
+            }
+        }
+    }
 
     private void MovementManager()
     {
@@ -66,9 +101,14 @@ public class PlayerController : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            state = State.jumping;
+            Jump();
         }
+    }
+
+    private void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        state = State.jumping;
     }
 
     private void AnimationState()
@@ -87,9 +127,17 @@ public class PlayerController : MonoBehaviour
                 state = State.idle;
             }
         }
+        //script sa verifice daca caracterul cade in timp ce alearga sau sta pe loc, si daca da, sa schimbe state-ul in falling
         else if ( (state == State.idle || state == State.running) && coll.IsTouchingLayers(ground) == false)
         {
             state = State.falling;
+        }
+        else if (state == State.hurt)
+        {
+            if(Mathf.Abs(rb.velocity.x) < .1f)
+            {
+                state = State.idle;
+            }
         }
         else if (Mathf.Abs(rb.velocity.x) > 2f)
         {
