@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     //Start variables
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-
     //State machine
     private enum State {idle, running, jumping, falling, hurt}
     private State state = State.idle;
@@ -18,18 +18,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
-    [SerializeField] private int cherries = 0;
-    [SerializeField] private Text cherryText;
     [SerializeField] private float hurtForce = 5f;
+    [SerializeField] private AudioSource footstep;
+    [SerializeField] private AudioSource cherry;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-
+        PermanentUI.perm.hpAmmount.text = PermanentUI.perm.hp.ToString();
         speed = 7f;
         jumpForce = 12f;
-        cherryText.text = "0";
     }
 
     // Update is called once per frame
@@ -47,9 +47,18 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.tag == "Collectable")
         {
+            cherry.Play();
             Destroy(collision.gameObject);
-            cherries++;
-            cherryText.text = cherries.ToString();
+            PermanentUI.perm.cherries++;
+            PermanentUI.perm.cherryText.text = PermanentUI.perm.cherries.ToString();
+        }
+        if (collision.tag == "Powerup")
+        {
+            Destroy(collision.gameObject);
+            jumpForce = 20f;
+            speed = 15f;
+            GetComponent<SpriteRenderer>().color = Color.yellow;
+            StartCoroutine(ResetPower());
         }
     }
 
@@ -57,15 +66,17 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy" )
         {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if(state == State.falling)
-            { 
-                Destroy(collision.gameObject);
+            {
+                enemy.JumpedOn();
                 Jump();
             }
             else
             {
                 state = State.hurt;
-                if(collision.gameObject.transform.position.x > transform.position.x)
+                HandleHP();
+                if (collision.gameObject.transform.position.x > transform.position.x)
                 {
                     //enemy e in dreapta, damage + arunca stanga
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
@@ -76,6 +87,16 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
             }
+        }
+    }
+
+    private void HandleHP()
+    {
+        PermanentUI.perm.hp -= 1;
+        PermanentUI.perm.hpAmmount.text = PermanentUI.perm.hp.ToString();
+        if (PermanentUI.perm.hp <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -148,5 +169,16 @@ public class PlayerController : MonoBehaviour
         {
             state = State.idle;
         }
+    }
+    
+    private IEnumerator ResetPower()
+    {
+        yield return new WaitForSeconds(10);
+        jumpForce = 12f;
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+    private void Footstep()
+    {
+        footstep.Play();
     }
 }
