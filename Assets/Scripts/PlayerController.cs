@@ -175,6 +175,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         jumpForce = 12f;
+        speed = 7f;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
     private void Footstep()

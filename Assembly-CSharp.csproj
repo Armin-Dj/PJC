@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{433D7E1F-730D-3785-3D3C-547ED66D7D51}</ProjectGuid>
+    <ProjectGuid>{AF87D7C9-FF2A-EF1B-8148-A72DDE9A7DF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -625,91 +625,91 @@
       <HintPath>E:/An3/Programarea jocurilor pe calculator/2019.4.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-Platformer/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/An3/Programarea jocurilor pe calculator/RedRunner/PJC-fla/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
