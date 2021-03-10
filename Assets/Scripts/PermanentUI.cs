@@ -16,7 +16,6 @@ public class PermanentUI : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-
         cherryText.text = cherries.ToString();
 
         //singleton

@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
         PermanentUI.perm.hpAmmount.text = PermanentUI.perm.hp.ToString();
+
     }
 
     // Update is called once per frame
