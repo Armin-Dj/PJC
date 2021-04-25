@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     [SerializeField] private string sceneName;
+    public bool isStart;
+    public bool isQuit;
     private void OnTriggerEnter2D(Collider2D coll)
     {
 
@@ -14,5 +16,6 @@ public class SceneChanger : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+    
 
 }
